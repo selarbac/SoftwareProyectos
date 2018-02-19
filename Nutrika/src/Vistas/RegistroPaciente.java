@@ -27,20 +27,86 @@ public class RegistroPaciente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel_Busqueda = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jPanel_DatosGenerales = new javax.swing.JPanel();
+        jLabel_Perfil = new javax.swing.JLabel();
+        jLabel_Fondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        setType(java.awt.Window.Type.POPUP);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel_Busqueda.setBackground(new java.awt.Color(255, 226, 226));
+        jPanel_Busqueda.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Busqueda", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Times New Roman", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel_Busqueda.setOpaque(false);
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("ID del Paciente: ");
+
+        jButton1.setText("Buscar");
+
+        javax.swing.GroupLayout jPanel_BusquedaLayout = new javax.swing.GroupLayout(jPanel_Busqueda);
+        jPanel_Busqueda.setLayout(jPanel_BusquedaLayout);
+        jPanel_BusquedaLayout.setHorizontalGroup(
+            jPanel_BusquedaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_BusquedaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(455, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        jPanel_BusquedaLayout.setVerticalGroup(
+            jPanel_BusquedaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_BusquedaLayout.createSequentialGroup()
+                .addGroup(jPanel_BusquedaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel_Busqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 2, 750, 60));
+
+        jPanel_DatosGenerales.setBackground(null);
+        jPanel_DatosGenerales.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Datos Generales", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel_DatosGenerales.setOpaque(false);
+
+        jLabel_Perfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/avatar.jpg"))); // NOI18N
+        jLabel_Perfil.setText("imagen de perfil");
+
+        javax.swing.GroupLayout jPanel_DatosGeneralesLayout = new javax.swing.GroupLayout(jPanel_DatosGenerales);
+        jPanel_DatosGenerales.setLayout(jPanel_DatosGeneralesLayout);
+        jPanel_DatosGeneralesLayout.setHorizontalGroup(
+            jPanel_DatosGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_DatosGeneralesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel_Perfil, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(577, Short.MAX_VALUE))
+        );
+        jPanel_DatosGeneralesLayout.setVerticalGroup(
+            jPanel_DatosGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_DatosGeneralesLayout.createSequentialGroup()
+                .addComponent(jLabel_Perfil, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 216, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel_DatosGenerales, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 69, 750, 400));
+
+        jLabel_Fondo.setBackground(new java.awt.Color(51, 0, 51));
+        jLabel_Fondo.setLabelFor(this);
+        jLabel_Fondo.setOpaque(true);
+        getContentPane().add(jLabel_Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 752, 470));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -79,5 +145,12 @@ public class RegistroPaciente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel_Fondo;
+    private javax.swing.JLabel jLabel_Perfil;
+    private javax.swing.JPanel jPanel_Busqueda;
+    private javax.swing.JPanel jPanel_DatosGenerales;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
